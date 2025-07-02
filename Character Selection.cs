@@ -15,9 +15,22 @@ namespace dungeon_crawl
         public Character_Selection()
         {
             InitializeComponent();
+            Ragsni.MouseEnter += PictureBox1_MouseEnter;
+            Ragsni.MouseLeave += PictureBox1_MouseLeave;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+private void PictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            Ragsni.BorderStyle = BorderStyle.FixedSingle; // Show border on hover
+        }
+
+        private void PictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            Ragsni.BorderStyle = BorderStyle.None; // Remove border when not hovered
+        }
+        
+
+        private void Ragsni_Click(object sender, EventArgs e)
         {
 
         }
@@ -29,7 +42,9 @@ namespace dungeon_crawl
 
         private void InfoRag_Click(object sender, EventArgs e)
         {
-
+            RagInfo info = new RagInfo();
+            info.Show();
+            this.Hide();
         }
 
         private void label1_Click_1(object sender, EventArgs e)
