@@ -1,6 +1,6 @@
 ﻿namespace dungeon_crawl
 {
-    partial class RagInfo
+    partial class Cahara_info
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RagInfoText = new System.Windows.Forms.TextBox();
             this.BackButtonRag = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Caharasni = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Caharasni)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -40,11 +40,11 @@
             this.textBox1.BackColor = System.Drawing.Color.Black;
             this.textBox1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(59, 333);
+            this.textBox1.Location = new System.Drawing.Point(98, 342);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(986, 44);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Ragnavaldir -Barbarian";
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Cahara - Rogue";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RagInfoText
@@ -53,52 +53,53 @@
             this.RagInfoText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.RagInfoText.Font = new System.Drawing.Font("Copperplate Gothic Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RagInfoText.ForeColor = System.Drawing.Color.White;
-            this.RagInfoText.Location = new System.Drawing.Point(59, 407);
+            this.RagInfoText.Location = new System.Drawing.Point(111, 415);
             this.RagInfoText.Multiline = true;
             this.RagInfoText.Name = "RagInfoText";
-            this.RagInfoText.Size = new System.Drawing.Size(973, 89);
-            this.RagInfoText.TabIndex = 3;
-            this.RagInfoText.Text = "A great warrior , whose village was burnt down by wealthy royalty. Now he is seek" +
-    "ing riches and power inside the dungeon to inact his revenge.";
+            this.RagInfoText.Size = new System.Drawing.Size(973, 60);
+            this.RagInfoText.TabIndex = 6;
+            this.RagInfoText.Text = "With a troubled youth and in dire need of money he isn\'t scared to venture in the" +
+    " dungeons";
             this.RagInfoText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.RagInfoText.TextChanged += new System.EventHandler(this.RagInfoText_TextChanged);
             // 
             // BackButtonRag
             // 
             this.BackButtonRag.BackColor = System.Drawing.Color.Black;
             this.BackButtonRag.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButtonRag.ForeColor = System.Drawing.Color.White;
-            this.BackButtonRag.Location = new System.Drawing.Point(283, 502);
+            this.BackButtonRag.Location = new System.Drawing.Point(320, 496);
             this.BackButtonRag.Name = "BackButtonRag";
             this.BackButtonRag.Size = new System.Drawing.Size(534, 82);
-            this.BackButtonRag.TabIndex = 4;
+            this.BackButtonRag.TabIndex = 7;
             this.BackButtonRag.Text = "BACK";
             this.BackButtonRag.UseVisualStyleBackColor = false;
             this.BackButtonRag.Click += new System.EventHandler(this.BackButtonRag_Click);
             // 
-            // pictureBox1
+            // Caharasni
             // 
-            this.pictureBox1.BackgroundImage = global::dungeon_crawl.Properties.Resources.download;
-            this.pictureBox1.Location = new System.Drawing.Point(430, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(224, 333);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.Caharasni.BackgroundImage = global::dungeon_crawl.Properties.Resources.download__1_;
+            this.Caharasni.Location = new System.Drawing.Point(465, 2);
+            this.Caharasni.Name = "Caharasni";
+            this.Caharasni.Size = new System.Drawing.Size(229, 334);
+            this.Caharasni.TabIndex = 2;
+            this.Caharasni.TabStop = false;
             // 
-            // RagInfo
+            // Cahara_info
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1182, 603);
             this.Controls.Add(this.BackButtonRag);
             this.Controls.Add(this.RagInfoText);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Caharasni);
+            this.Font = new System.Drawing.Font("Copperplate Gothic Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "RagInfo";
-            this.Text = "RagInfo";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Name = "Cahara_info";
+            this.Text = "Cahara_info";
+            ((System.ComponentModel.ISupportInitialize)(this.Caharasni)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,7 +107,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Caharasni;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox RagInfoText;
         private System.Windows.Forms.Button BackButtonRag;

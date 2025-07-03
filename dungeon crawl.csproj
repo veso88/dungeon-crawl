@@ -46,17 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Battle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Battle.Designer.cs">
+      <DependentUpon>Battle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cahara_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cahara_info.Designer.cs">
+      <DependentUpon>Cahara_info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Character Selection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Character Selection.Designer.cs">
       <DependentUpon>Character Selection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Enki_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enki_Info.Designer.cs">
+      <DependentUpon>Enki_Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mapgrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mapgrid.Designer.cs">
+      <DependentUpon>mapgrid.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,11 +90,23 @@
     <Compile Include="RagInfo.Designer.cs">
       <DependentUpon>RagInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Battle.resx">
+      <DependentUpon>Battle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cahara_info.resx">
+      <DependentUpon>Cahara_info.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Character Selection.resx">
       <DependentUpon>Character Selection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Enki_Info.resx">
+      <DependentUpon>Enki_Info.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mapgrid.resx">
+      <DependentUpon>mapgrid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +142,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\изтеглен файл %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\изтеглен файл.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
