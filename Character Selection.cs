@@ -52,36 +52,44 @@ private void PictureBox1_MouseEnter(object sender, EventArgs e)
             Caharasni.BorderStyle = BorderStyle.None; // Remove border when not hovered
         }
 
-        private void Ragsni_Click(object sender, EventArgs e)
+        public void Ragsni_Click(object sender, EventArgs e)
         {
             mapgrid spawn = new mapgrid();
             spawn.Show();
             this.Hide();
+            Image heroImage = Properties.Resources.download;
+ 
         }
 
-        private void InfoRag_Click(object sender, EventArgs e)
+        public void InfoRag_Click(object sender, EventArgs e)
         {
             RagInfo info = new RagInfo();
             info.Show();
             this.Hide();
         }
 
-        private void Cahara_info_Click(object sender, EventArgs e)
+        public void Cahara_info_Click(object sender, EventArgs e)
         {
+            mapgrid spawn = new mapgrid();
+            spawn.Show();
+            this.Hide();
+        }
+
+        public void Enkisni_Click(object sender, EventArgs e)
+        {
+            mapgrid spawn = new mapgrid();
+            spawn.Show();
+            this.Hide();
+            Image heroImage = Properties.Resources.download__2_;
 
         }
 
-        private void Enkisni_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Enki_info_Click(object sender, EventArgs e)
+        public void Enki_info_Click(object sender, EventArgs e)
         {
             Enki_Info informa = new Enki_Info();
             informa.Show();
             this.Hide();
-            Image heroImage= Properties.Resources.
+            
         }
 
         private void Character_Selection_Load(object sender, EventArgs e)

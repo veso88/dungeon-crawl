@@ -73,6 +73,9 @@ namespace dungeon_crawl
             if (map[characterX, characterY] == 2)
             {
                 MessageBox.Show("You started a battle");
+                Battle start = new Battle();
+                start.Show();
+                this.Hide();
                 map[characterX, characterY] = 0; // remove the object from the map
                 panelMap.Invalidate();
 

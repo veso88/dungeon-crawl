@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CharacterPicBattle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPicBattle)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -45,13 +45,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // CharacterPicBattle
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 363);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(228, 239);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.CharacterPicBattle.Location = new System.Drawing.Point(12, 269);
+            this.CharacterPicBattle.Name = "CharacterPicBattle";
+            this.CharacterPicBattle.Size = new System.Drawing.Size(228, 239);
+            this.CharacterPicBattle.TabIndex = 1;
+            this.CharacterPicBattle.TabStop = false;
             // 
             // Battle
             // 
@@ -60,12 +60,12 @@
             this.BackgroundImage = global::dungeon_crawl.Properties.Resources.изтеглен_файл__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 603);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.CharacterPicBattle);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Battle";
             this.Text = "Battle";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPicBattle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -73,6 +73,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox CharacterPicBattle;
     }
 }

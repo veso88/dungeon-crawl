@@ -15,6 +15,7 @@ namespace dungeon_crawl
         public Battle()
         {
             InitializeComponent();
+            
         }
     }
 }
