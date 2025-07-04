@@ -29,16 +29,16 @@ namespace dungeon_crawl
         {
             map = new int[mapWidth, mapHeight];
 
-            // Fill the map with floor tiles (0)
+            // Fill the map with floor
             for (int x = 0; x < mapWidth; x++)
             {
                 for (int y = 0; y < mapHeight; y++)
                 {
-                    map[x, y] = 0; // floor
+                    map[x, y] = 0;
                 }
             }
 
-            // Create walls around the edges (1)
+            // Border walls
             for (int x = 0; x < mapWidth; x++)
             {
                 map[x, 0] = 1;
@@ -50,15 +50,32 @@ namespace dungeon_crawl
                 map[mapWidth - 1, y] = 1;
             }
 
-            // Add some inner walls for challenge
-            map[5, 5] = 1;
-            map[6, 5] = 1;
-            map[7, 5] = 1;
+            // Inner walls (maze style)
+            for (int x = 3; x < 17; x++)
+            {
+                map[x, 3] = 1;
+            }
 
-            // Add an interactive object (2)
-            map[10, 10] = 2;
+            for (int y = 6; y < 10; y++)
+            {
+                map[6, y] = 1;
+                map[13, y] = 1;
+            }
+
+            map[10, 5] = 1;
+            map[11, 5] = 1;
+            map[12, 5] = 1;
+
+            map[8, 8] = 1;
+            map[8, 9] = 1;
+            map[8, 10] = 1;
+
+            // Interactables
+            map[4, 4] = 2;
+            map[10, 10] = 2; 
+            map[15, 12] = 2; 
         }
-            private bool IsWalkable(int x, int y)
+        private bool IsWalkable(int x, int y)
         {
             // Check if inside map boundaries
             if (x < 0 || x >= mapWidth || y < 0 || y >= mapHeight)
@@ -70,19 +87,25 @@ namespace dungeon_crawl
 
         private void CheckInteraction()
         {
-            if (map[characterX, characterY] == 2)
+            if (characterX == 4 && characterY == 4)
             {
-                MessageBox.Show("You started a battle");
-                Battle start = new Battle();
-                start.Show();
+                MessageBox.Show("Sbluska se s mishok palqk");
+                new Battle().Show();
                 this.Hide();
-                map[characterX, characterY] = 0; // remove the object from the map
-                panelMap.Invalidate();
-
             }
+            else if (characterX == 10 && characterY == 10)
+            {
+                MessageBox.Show("Nameri neotvorena bira");
+                new Bira().ShowDialog();
+            }
+            else if (characterX == 15 && characterY == 12)
+            {
+                MessageBox.Show("Nameri 5lea");
+            }
+
         }
 
-        
+
 
         public mapgrid()
         {

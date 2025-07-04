@@ -52,6 +52,12 @@
     <Compile Include="Battle.Designer.cs">
       <DependentUpon>Battle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bira.Designer.cs">
+      <DependentUpon>Bira.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cahara_info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,25 @@
     </Compile>
     <Compile Include="Enki_Info.Designer.cs">
       <DependentUpon>Enki_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FightForm.Designer.cs">
+      <DependentUpon>FightForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleeForm.Designer.cs">
+      <DependentUpon>FleeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameState.cs" />
+    <Compile Include="ItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemForm.Designer.cs">
+      <DependentUpon>ItemForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -90,8 +115,17 @@
     <Compile Include="RagInfo.Designer.cs">
       <DependentUpon>RagInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="TalkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalkForm.Designer.cs">
+      <DependentUpon>TalkForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Battle.resx">
       <DependentUpon>Battle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bira.resx">
+      <DependentUpon>Bira.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cahara_info.resx">
       <DependentUpon>Cahara_info.cs</DependentUpon>
@@ -101,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Enki_Info.resx">
       <DependentUpon>Enki_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FightForm.resx">
+      <DependentUpon>FightForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -120,6 +157,9 @@
     </Compile>
     <EmbeddedResource Include="RagInfo.resx">
       <DependentUpon>RagInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalkForm.resx">
+      <DependentUpon>TalkForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -151,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\изтеглен файл.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\изтеглен файл %282%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
