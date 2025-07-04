@@ -30,7 +30,7 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RagInfoText = new System.Windows.Forms.TextBox();
-            this.BackButtonRag = new System.Windows.Forms.Button();
+            this.BackButtonCahara = new System.Windows.Forms.Button();
             this.Caharasni = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Caharasni)).BeginInit();
             this.SuspendLayout();
@@ -61,20 +61,19 @@
             this.RagInfoText.Text = "With a troubled youth and in dire need of money he isn\'t scared to venture in the" +
     " dungeons";
             this.RagInfoText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.RagInfoText.TextChanged += new System.EventHandler(this.RagInfoText_TextChanged);
             // 
-            // BackButtonRag
+            // BackButtonCahara
             // 
-            this.BackButtonRag.BackColor = System.Drawing.Color.Black;
-            this.BackButtonRag.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButtonRag.ForeColor = System.Drawing.Color.White;
-            this.BackButtonRag.Location = new System.Drawing.Point(320, 496);
-            this.BackButtonRag.Name = "BackButtonRag";
-            this.BackButtonRag.Size = new System.Drawing.Size(534, 82);
-            this.BackButtonRag.TabIndex = 7;
-            this.BackButtonRag.Text = "BACK";
-            this.BackButtonRag.UseVisualStyleBackColor = false;
-            this.BackButtonRag.Click += new System.EventHandler(this.BackButtonRag_Click);
+            this.BackButtonCahara.BackColor = System.Drawing.Color.Black;
+            this.BackButtonCahara.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButtonCahara.ForeColor = System.Drawing.Color.White;
+            this.BackButtonCahara.Location = new System.Drawing.Point(320, 496);
+            this.BackButtonCahara.Name = "BackButtonCahara";
+            this.BackButtonCahara.Size = new System.Drawing.Size(534, 82);
+            this.BackButtonCahara.TabIndex = 7;
+            this.BackButtonCahara.Text = "BACK";
+            this.BackButtonCahara.UseVisualStyleBackColor = false;
+            this.BackButtonCahara.Click += new System.EventHandler(this.BackButtonCahara_Click_1);
             // 
             // Caharasni
             // 
@@ -91,7 +90,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1182, 603);
-            this.Controls.Add(this.BackButtonRag);
+            this.Controls.Add(this.BackButtonCahara);
             this.Controls.Add(this.RagInfoText);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Caharasni);
@@ -110,6 +109,6 @@
         private System.Windows.Forms.PictureBox Caharasni;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox RagInfoText;
-        private System.Windows.Forms.Button BackButtonRag;
+        private System.Windows.Forms.Button BackButtonCahara;
     }
 }

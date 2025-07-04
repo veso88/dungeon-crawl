@@ -39,6 +39,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Bira";
             this.Text = "Bira";
+            this.Load += new System.EventHandler(this.Bira_Load);
             this.ResumeLayout(false);
 
         }

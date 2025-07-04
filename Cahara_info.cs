@@ -17,14 +17,16 @@ namespace dungeon_crawl
             InitializeComponent();
         }
 
-        private void RagInfoText_TextChanged(object sender, EventArgs e)
+
+
+      
+
+        private void BackButtonCahara_Click_1(object sender, EventArgs e)
+    
         {
-
-        }
-
-        private void BackButtonRag_Click(object sender, EventArgs e)
-        {
-
+            Character_Selection charsel654 = new Character_Selection();
+            charsel654.Show();
+            this.Hide();
         }
     }
-}
+    }

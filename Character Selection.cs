@@ -57,7 +57,7 @@ private void PictureBox1_MouseEnter(object sender, EventArgs e)
             mapgrid spawn = new mapgrid();
             spawn.Show();
             this.Hide();
-            Image heroImage = Properties.Resources.download;
+           
  
         }
 
@@ -70,8 +70,8 @@ private void PictureBox1_MouseEnter(object sender, EventArgs e)
 
         public void Cahara_info_Click(object sender, EventArgs e)
         {
-            mapgrid spawn = new mapgrid();
-            spawn.Show();
+            Cahara_info informac = new Cahara_info();
+            informac.Show();
             this.Hide();
         }
 
@@ -80,7 +80,7 @@ private void PictureBox1_MouseEnter(object sender, EventArgs e)
             mapgrid spawn = new mapgrid();
             spawn.Show();
             this.Hide();
-            Image heroImage = Properties.Resources.download__2_;
+           
 
         }
 
@@ -95,6 +95,13 @@ private void PictureBox1_MouseEnter(object sender, EventArgs e)
         private void Character_Selection_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Caharasni_Click(object sender, EventArgs e)
+        {
+            mapgrid spawn = new mapgrid();
+            spawn.Show();
+            this.Hide();
         }
     }
 }

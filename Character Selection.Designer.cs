@@ -90,6 +90,7 @@
             this.Caharasni.Size = new System.Drawing.Size(229, 334);
             this.Caharasni.TabIndex = 1;
             this.Caharasni.TabStop = false;
+            this.Caharasni.Click += new System.EventHandler(this.Caharasni_Click);
             // 
             // Ragsni
             // 

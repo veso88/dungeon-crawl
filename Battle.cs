@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,6 +31,7 @@ namespace dungeon_crawl
                     menuOptions[i].ForeColor = Color.White;
                 }
             }
+
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -69,11 +71,14 @@ namespace dungeon_crawl
                 else if (selectedText == "Flee")
                 {
                     var fleeForm = new mapgrid();
+                    this.Hide();
                     fleeForm.ShowDialog();
-                }
-                this.Show(); 
+                    
 
-               
+                }
+
+
+
             }
         }
 
@@ -89,5 +94,6 @@ namespace dungeon_crawl
             this.KeyPreview = true;  // Let form detect key presses first
             this.KeyDown += Form1_KeyDown;
         }
+      
     }
 }
