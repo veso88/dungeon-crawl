@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace dungeon_crawl
 {
-    
+    internal static class Hero
+    {
+        public static int health = 100;
+    }
 }

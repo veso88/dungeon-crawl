@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace dungeon_crawl
 {
@@ -22,7 +24,6 @@ namespace dungeon_crawl
         private int markerX = 0;
         private int markerSpeed = 6; // pixels per tick
         private bool movingRight = true;
-
         private Timer moveTimer;
 
         private Label lblInfo;
@@ -107,23 +108,24 @@ namespace dungeon_crawl
                 if (e.KeyCode == Keys.Space)
                 {
                     moveTimer.Stop();
-
                     if (markerX >= targetZone.X && markerX <= targetZone.X + targetZone.Width)
                     {
-                        DamageDealt = 100;
-                        MessageBox.Show("Hit! You dealt 100 damage.");
+                        MessageBox.Show("Nabi pael penef");
+                        Enemy.Health = Enemy.Health - 100;
+                        this.Hide();
+                        if (Enemy.Health <1)
+                        {
+
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Miss! No damage dealt.");
+                        MessageBox.Show("Ne uceli palqk");
                     }
-
                     // Instead of showing DodgeForm directly, do this:
                     this.Hide();  // Hide the FightForm
-
                     var dodgeForm = new DodgeForm();
                     dodgeForm.ShowDialog(); // Block until dodge game finishes
-
                     this.Close(); // Close FightForm after DodgeForm ends
                 }
             }
@@ -132,14 +134,14 @@ namespace dungeon_crawl
         {
 
             private Timer gameTimer;
-            private int gameDuration = 30000; // ms
+            private int gameDuration = 5000; // ms
             private int elapsed = 0;
 
             private PictureBox heart;
-            private int heartSpeed = 8;
+            private int heartSpeed = 9;
 
             private Rectangle block;
-            private int blockSpeed = 12;
+            private int blockSpeed = 11;
             private Random rand = new Random();
 
             public DodgeForm()
@@ -187,8 +189,11 @@ namespace dungeon_crawl
                 if (heartRect.IntersectsWith(blockRect))
                 {
                     gameTimer.Stop();
-                    MessageBox.Show("You got hit! Try again.", "Game Over");
-                    this.Close();
+                    MessageBox.Show("Pael PP te nabara");
+                    Hero.health = Hero.health - 0;
+                    Battle b = new Battle();
+                    this.Hide();
+                    b.Show();
                     return;
                 }
 
@@ -196,8 +201,10 @@ namespace dungeon_crawl
                 if (elapsed >= gameDuration)
                 {
                     gameTimer.Stop();
-                    MessageBox.Show("Well done! You dodged everything!", "Victory");
-                    this.Close();
+                    MessageBox.Show("Brao e ne dade na PP da te dobara");
+                    Battle b = new Battle();
+                    this.Hide();
+                    b.Show();
                     return;
                 }
 
@@ -220,5 +227,7 @@ namespace dungeon_crawl
                 heart.Location = pos;
             }
         }
+
+
     }
 }

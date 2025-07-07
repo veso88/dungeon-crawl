@@ -1,6 +1,6 @@
 ﻿namespace dungeon_crawl
 {
-    partial class ItemForm
+    partial class YouDiedcs
     {
         /// <summary>
         /// Required designer variable.
@@ -29,42 +29,33 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(332, 180);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(332, 361);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 69);
+            this.button1.Size = new System.Drawing.Size(142, 48);
             this.button1.TabIndex = 0;
-            this.button1.Text = "bira";
+            this.button1.Text = "Respawn";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(12, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 85);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "BACK";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // ItemForm
+            // YouDiedcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::dungeon_crawl.Properties.Resources.изтеглен_файл__1_1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "ItemForm";
-            this.Text = "ItemFormcs";
+            this.Name = "YouDiedcs";
+            this.Text = "YouDiedcs";
             this.ResumeLayout(false);
 
         }
@@ -72,6 +63,5 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }

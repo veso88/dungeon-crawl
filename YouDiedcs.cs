@@ -10,23 +10,19 @@ using System.Windows.Forms;
 
 namespace dungeon_crawl
 {
-    public partial class ItemForm : Form
+    public partial class YouDiedcs : Form
     {
-        public ItemForm()
+        public YouDiedcs()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Bira().ShowDialog();
-        }
+            mapgrid respawn = new mapgrid();
+            respawn.Show();
+                this.Hide();
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Battle bitka = new Battle();
-            this.Hide();
-            bitka.Show();
         }
     }
 }

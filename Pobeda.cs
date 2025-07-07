@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace dungeon_crawl
 {
-    public partial class FleeForm : Form
+    public partial class Pobeda : Form
     {
-        public FleeForm()
+        public Pobeda()
         {
             InitializeComponent();
         }

@@ -92,15 +92,21 @@ namespace dungeon_crawl
                 MessageBox.Show("Sbluska se s mishok palqk");
                 new Battle().Show();
                 this.Hide();
+                map[4, 4] = 0; // Make the interactable disappear
+                panelMap.Invalidate();
             }
             else if (characterX == 10 && characterY == 10)
             {
                 MessageBox.Show("Nameri neotvorena bira");
                 new Bira().ShowDialog();
+                map[10, 10] = 0; // Make the interactable disappear
+                panelMap.Invalidate();
             }
             else if (characterX == 15 && characterY == 12)
             {
                 MessageBox.Show("Nameri 5lea");
+                map[15, 12] = 0; // Make the interactable disappear
+                panelMap.Invalidate();
             }
 
         }

@@ -49,11 +49,11 @@ namespace dungeon_crawl
             // Example dialogue — customize this!
             dialogueLines = new List<string>
         {
-            "You try to talk to the enemy...",
-            "But it doesn't seem to understand you.",
-            "It growls softly.",
-            "You feel a little awkward.",
-            "Maybe that wasn’t very effective..."
+            "Opitvash se da govorish s Pael Penchikliev",
+            "Obache toi ima slabotokov mozuk",
+            "Toi tweakva lekata",
+            "Ti se chuvstvash neudobno",
+            "Tva mojebi ne beshe mnogo efektivno"
         };
 
             ShowNextLine();

@@ -14,6 +14,7 @@ namespace dungeon_crawl
     public partial class Battle : Form
     {
 
+
         int selectedIndex = 0;
         Label[] menuOptions;
         void UpdateMenuHighlight()
@@ -57,11 +58,14 @@ namespace dungeon_crawl
                 {
                     var fightForm = new FightForm();
                     fightForm.ShowDialog();
+                    this.Hide();
                 }
                 else if (selectedText == "Item")
                 {
                     var itemForm = new ItemForm();
                     itemForm.ShowDialog();
+                    this.Hide();
+
                 }
                 else if (selectedText == "Talk")
                 {
@@ -71,8 +75,8 @@ namespace dungeon_crawl
                 else if (selectedText == "Flee")
                 {
                     var fleeForm = new mapgrid();
-                    this.Hide();
                     fleeForm.ShowDialog();
+                    this.Hide();
                     
 
                 }
@@ -94,6 +98,18 @@ namespace dungeon_crawl
             this.KeyPreview = true;  // Let form detect key presses first
             this.KeyDown += Form1_KeyDown;
         }
-      
+
+        private void Battle_Load(object sender, EventArgs e)
+        {
+            progressBar1.Value = Enemy.Health;
+            progressBar2.Value = Hero.health;
+            if (Hero.health == 0)
+            {
+                Pobeda pobeda = new Pobeda();
+                    pobeda.Show();
+                this.Hide();
+            }
+
+        }
     }
 }

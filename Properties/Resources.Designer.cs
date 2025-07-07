@@ -103,6 +103,26 @@ namespace dungeon_crawl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_20250707_110011_593 {
+            get {
+                object obj = ResourceManager.GetObject("IMG-20250707-110011-593", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20250707_113451_468 {
+            get {
+                object obj = ResourceManager.GetObject("IMG-20250707-113451-468", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap изтеглен_файл {
             get {
                 object obj = ResourceManager.GetObject("изтеглен файл", resourceCulture);
@@ -116,6 +136,16 @@ namespace dungeon_crawl.Properties {
         internal static System.Drawing.Bitmap изтеглен_файл__1_ {
             get {
                 object obj = ResourceManager.GetObject("изтеглен файл (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap изтеглен_файл__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("изтеглен файл (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
