@@ -63,6 +63,16 @@ namespace dungeon_crawl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4d830534_067d_432f_b1d5_8936356701ff {
+            get {
+                object obj = ResourceManager.GetObject("4d830534-067d-432f-b1d5-8936356701ff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);

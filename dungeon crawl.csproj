@@ -103,6 +103,12 @@
     <Compile Include="mapgrid.Designer.cs">
       <DependentUpon>mapgrid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Piqnka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Piqnka.Designer.cs">
+      <DependentUpon>Piqnka.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pobeda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mapgrid.resx">
       <DependentUpon>mapgrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Piqnka.resx">
+      <DependentUpon>Piqnka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pobeda.resx">
       <DependentUpon>Pobeda.cs</DependentUpon>
@@ -220,6 +229,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IMG-20250707-113451-468.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4d830534-067d-432f-b1d5-8936356701ff.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

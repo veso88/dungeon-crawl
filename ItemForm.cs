@@ -12,14 +12,24 @@ namespace dungeon_crawl
 {
     public partial class ItemForm : Form
     {
+        int clickcount = 0;
         public ItemForm()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            clickcount++;
             new Bira().ShowDialog();
+            if (clickcount > 4)
+            {
+                Piqnka piqn = new Piqnka();
+                    piqn.Show();
+                this.Close();
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
