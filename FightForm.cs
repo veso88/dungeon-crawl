@@ -111,7 +111,7 @@ namespace dungeon_crawl
                     if (markerX >= targetZone.X && markerX <= targetZone.X + targetZone.Width)
                     {
                         MessageBox.Show("Nabi pael penef");
-                        Enemy.Health = Enemy.Health - 100;
+                        Enemy.Health = Enemy.Health - 25;
                         this.Hide();
                         if (Enemy.Health <1)
                         {
@@ -190,7 +190,7 @@ namespace dungeon_crawl
                 {
                     gameTimer.Stop();
                     MessageBox.Show("Pael PP te nabara");
-                    Hero.health = Hero.health - 0;
+                    Hero.health = Hero.health - 25;
                     Battle b = new Battle();
                     this.Hide();
                     b.Show();

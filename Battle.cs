@@ -17,6 +17,7 @@ namespace dungeon_crawl
 
         int selectedIndex = 0;
         Label[] menuOptions;
+
         void UpdateMenuHighlight()
         {
             for (int i = 0; i < menuOptions.Length; i++)
@@ -101,14 +102,21 @@ namespace dungeon_crawl
 
         private void Battle_Load(object sender, EventArgs e)
         {
-            progressBar1.Value = Enemy.Health;
-            progressBar2.Value = Hero.health;
-            if (Hero.health == 0)
+            if (Enemy.Health == 0)
             {
                 Pobeda pobeda = new Pobeda();
-                    pobeda.Show();
-                this.Hide();
+                pobeda.Show();
+                this.Close();
+            }else if (Hero.health == 0)
+            {
+                YouDiedcs umrq = new YouDiedcs();
+                umrq.Show();
+                this.Close();
             }
+
+                progressBar1.Value = Enemy.Health;
+            progressBar2.Value = Hero.health;
+           
 
         }
     }
