@@ -22,12 +22,43 @@ namespace dungeon_crawl
             Enkisni.MouseLeave += PictureBox2_MouseLeave;
             Caharasni.MouseEnter += PictureBox3_MouseEnter;
             Caharasni.MouseLeave += PictureBox3_MouseLeave;
+            InfoRag.MouseEnter += Inforag_MouseEnter;
+            InfoRag.MouseLeave += Inforag_MouseLeave;
+            Enki_info.MouseLeave += EnkiInfo_MouseLeave;
+            Enki_info.MouseEnter += EnkiInfo_MouseEnter;
+            CaharaInfo.MouseEnter += CaharaInfo_MouseEnter;
+            CaharaInfo.MouseLeave += CaharaInfo_MouseLeave;
         }
-
+       
 private void PictureBox1_MouseEnter(object sender, EventArgs e)
         {
             Ragsni.BorderStyle = BorderStyle.FixedSingle; // Show border on hover
         }
+ private void Inforag_MouseEnter(object sender, EventArgs e)
+        {
+            InfoRag.BorderStyle = BorderStyle.FixedSingle;
+        }
+        private void Inforag_MouseLeave(object sender, EventArgs e)
+        {
+            InfoRag.BorderStyle = BorderStyle.None;
+        }
+        private void EnkiInfo_MouseEnter(object sender, EventArgs e)
+        {
+            Enki_info.BorderStyle = BorderStyle.FixedSingle;
+        }
+        private void EnkiInfo_MouseLeave(object sender, EventArgs e)
+        {
+            Enki_info.BorderStyle = BorderStyle.None;
+        }
+        private void CaharaInfo_MouseEnter(object sender, EventArgs e)
+        {
+            CaharaInfo.BorderStyle = BorderStyle.FixedSingle;
+        }
+        private void CaharaInfo_MouseLeave(object sender, EventArgs e)
+        {
+            CaharaInfo.BorderStyle = BorderStyle.None;
+        }
+
 
         private void PictureBox1_MouseLeave(object sender, EventArgs e)
         {

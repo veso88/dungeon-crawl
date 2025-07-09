@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.InfoRag = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.CaharaInfo = new System.Windows.Forms.Label();
             this.Enki_info = new System.Windows.Forms.Label();
             this.Enkisni = new System.Windows.Forms.PictureBox();
             this.Caharasni = new System.Windows.Forms.PictureBox();
@@ -50,16 +50,16 @@
             this.InfoRag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.InfoRag.Click += new System.EventHandler(this.InfoRag_Click);
             // 
-            // label1
+            // CaharaInfo
             // 
-            this.label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(778, 404);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 71);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Cahara";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Cahara_info_Click);
+            this.CaharaInfo.Font = new System.Drawing.Font("Copperplate Gothic Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CaharaInfo.Location = new System.Drawing.Point(778, 404);
+            this.CaharaInfo.Name = "CaharaInfo";
+            this.CaharaInfo.Size = new System.Drawing.Size(245, 71);
+            this.CaharaInfo.TabIndex = 12;
+            this.CaharaInfo.Text = "Cahara";
+            this.CaharaInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CaharaInfo.Click += new System.EventHandler(this.Cahara_info_Click);
             // 
             // Enki_info
             // 
@@ -109,7 +109,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1122, 545);
             this.Controls.Add(this.Enki_info);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CaharaInfo);
             this.Controls.Add(this.InfoRag);
             this.Controls.Add(this.Enkisni);
             this.Controls.Add(this.Caharasni);
@@ -131,7 +131,7 @@
         private System.Windows.Forms.PictureBox Caharasni;
         private System.Windows.Forms.PictureBox Enkisni;
         private System.Windows.Forms.Label InfoRag;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label CaharaInfo;
         private System.Windows.Forms.Label Enki_info
             ;
     }
